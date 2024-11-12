@@ -6,9 +6,11 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 14:24:26 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/12 14:27:04 by ygille           ###   ########.fr       */
+/*   Updated: 2024/11/12 14:37:21 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {
