@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/12 14:23:03 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/12 19:21:27 by ygille           ###   ########.fr       */
+/*   Created: 2024/11/12 18:43:52 by ygille            #+#    #+#             */
+/*   Updated: 2024/11/12 19:12:11 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	if (c >= ' ' && c <= '~')
-		return (1);
+	size_t	len;
+
+	len = ft_strlen(dst);
+	if (len >= size)
+		return (len + ft_strlen(src));
 	else
-		return (0);
+		return (ft_strlcpy(&dst[len], src, size - len) + len);
 }
