@@ -32,7 +32,7 @@ RM		= rm -f
 
 CFLAGS	= -Wall -Wextra -Werror
 
-.c.o:
+%c:%o
 	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o) -I $(INCS)
 
 $(NAME): $(OBJS)
