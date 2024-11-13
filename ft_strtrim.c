@@ -6,12 +6,11 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 15:15:13 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/13 16:07:46 by ygille           ###   ########.fr       */
+/*   Updated: 2024/11/13 16:09:59 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static	size_t	find_start(char const *s1, char const *set);
 static	size_t	find_end(char const *s1, char const *set);
