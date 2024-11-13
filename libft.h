@@ -6,7 +6,7 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 14:04:31 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/13 14:31:53 by ygille           ###   ########.fr       */
+/*   Updated: 2024/11/13 14:44:48 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strdup(const char *s);
 
 void	ft_bzero(void *s, size_t n);
+
 int		ft_atoi(const char *nptr);
 
 void	*ft_memset(void *s, int c, size_t n);
@@ -46,5 +47,7 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 
 void	*ft_calloc(size_t nmemb, size_t size);
+
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
