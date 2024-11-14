@@ -33,7 +33,12 @@ SRCS	= 	ft_isalpha.c \
 			ft_putendl_fd.c \
 			ft_putnbr_fd.c
 
+SRCS_B	=	$(SRCS) \
+			ft_lstnew.c
+
 OBJS	= $(SRCS:.c=.o)
+
+OBJS_B	= $(SRCS_B:.c=.o)
 
 INCS	= .
 
@@ -56,10 +61,14 @@ $(NAME): $(OBJS)
 	$(LIBC) $(NAME) $(OBJS)
 	$(LIBR) $(NAME)
 
-all: $(NAME)
+bonus:	$(OBJS_B)
+	$(LIBC) $(NAME) $(OBJS_B)
+	$(LIBR) $(NAME)
+
+all: bonus
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS_B)
 
 fclean: clean
 	$(RM) $(NAME)
