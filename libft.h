@@ -6,14 +6,16 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 14:04:31 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/14 10:29:46 by ygille           ###   ########.fr       */
+/*   Updated: 2024/11/14 11:11:49 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# define MAX_INT	2147483647
+# define MAX_INT		2147483647
+# define MIN_INT		-2147483648
+# define MIN_INT_STR	"-2147483648"
 
 # include <stddef.h>
 # include <stdlib.h>
