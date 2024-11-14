@@ -6,7 +6,7 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 16:08:55 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/13 17:20:18 by ygille           ###   ########.fr       */
+/*   Updated: 2024/11/14 11:05:37 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,10 @@ static	size_t	count_words(char const *s, char c)
 	count = 0;
 	i = 0;
 	j = 0;
+	if (c == 0 && s[i] != '\0')
+		return (1);
+	if (c == 0 && s[i] == '\0')
+		return (0);
 	while (s[i] != '\0')
 	{
 		i += j;
@@ -107,8 +111,8 @@ static	void	free_all(char **tab, size_t i)
 	free(tab);
 	return ;
 }
-/*int	main(int argc, char *argv[])
+/*int	main()
 {
-	ft_split(argv[1], argv[2][0]);
+	ft_split("tripouille", 0);
 	return (0);
 }*/
