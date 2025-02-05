@@ -6,7 +6,7 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 16:08:55 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:26:47 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:31:06 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,11 @@ static size_t	fill(char *line, size_t i, char c, char const *s);
 static size_t	line_size(size_t i, char c, char const *s);
 static void		free_all(char **tab, size_t i);
 
+/*
+** Return an array of strings
+** each line contain a word from s seperated with c
+** terminated by NULL
+*/
 char	**ft_split(char const *s, char c)
 {
 	char	**tab;

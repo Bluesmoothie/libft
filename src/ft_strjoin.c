@@ -6,12 +6,15 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 14:59:56 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:57:08 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:34:38 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/*
+** Return a new string with s1 and s2 concatenated
+*/
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	size;

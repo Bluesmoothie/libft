@@ -6,12 +6,16 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 18:11:47 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:27:10 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:33:54 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/*
+** Apply f on each character of s
+** return a new string with return values
+*/
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t	size;

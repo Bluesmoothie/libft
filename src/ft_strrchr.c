@@ -6,12 +6,16 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 19:47:16 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:27:20 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:32:52 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/*
+** Return the last occurence of c in s
+** NULL if not found
+*/
 char	*ft_strrchr(const char *s, int c)
 {
 	size_t	count;

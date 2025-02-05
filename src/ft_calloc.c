@@ -6,12 +6,17 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 14:00:08 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:27:45 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:15:53 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/*
+** Malloc nmemb * size bytes then
+** initialize each byte to 0
+** return the allocated address or NULL on error
+*/
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*array;

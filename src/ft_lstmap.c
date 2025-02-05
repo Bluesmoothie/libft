@@ -6,12 +6,17 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 12:46:31 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:59:16 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:24:28 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/*
+** Apply f on each node of lst
+** return a new list with return values
+** use del to delete the new list in an error occurs
+*/
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*modified_lst;

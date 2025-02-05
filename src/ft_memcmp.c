@@ -6,12 +6,16 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 12:39:28 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:25:56 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:27:24 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/*
+** Compare n bytes of s1 and s2
+** return 0 if there are equals
+*/
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t	i;

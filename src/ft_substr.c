@@ -6,12 +6,16 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 14:38:28 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:27:28 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:39:39 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/*
+** Return a new string truncating s from start bytes with a maximum
+** size of len
+*/
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*sub;

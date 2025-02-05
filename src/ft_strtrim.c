@@ -6,7 +6,7 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 15:15:13 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:27:23 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:38:46 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,10 @@
 static	size_t	find_start(char const *s1, char const *set);
 static	size_t	find_end(char const *s1, char const *set);
 
+/*
+** Return a new string copying s1 truncating the characters of set
+** at the start and the end
+*/
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	size;

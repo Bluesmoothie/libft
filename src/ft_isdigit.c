@@ -6,12 +6,16 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 14:17:40 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:25:16 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:18:56 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/*
+** Return 1 if c is numeric
+** 0 if not
+*/
 int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');

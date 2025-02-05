@@ -6,12 +6,15 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 18:28:34 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:26:06 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:29:04 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/*
+** Write s to fd
+*/
 void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	i;

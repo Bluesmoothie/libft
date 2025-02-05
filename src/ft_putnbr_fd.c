@@ -6,12 +6,16 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 10:29:22 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:26:43 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:30:15 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/*
+** Transform n to it's string representation and write
+** it to fd
+*/
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == INT_MIN)

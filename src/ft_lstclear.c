@@ -6,12 +6,16 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 12:27:14 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:25:30 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:22:14 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/*
+** Use del function to delete all nodes
+** in lst, updating the pointer
+*/
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*tmp;

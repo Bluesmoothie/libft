@@ -6,7 +6,7 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 17:24:54 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:25:22 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:19:37 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,10 @@
 
 static char	*alloc_reverse(char *input, int sign, int i);
 
+/*
+** Transform an int to it's string representation
+** returning the result
+*/
 char	*ft_itoa(int n)
 {
 	char	res[12];

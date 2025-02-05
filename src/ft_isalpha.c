@@ -6,12 +6,16 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 14:14:40 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:25:11 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:18:12 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/*
+** Return 1 if c is alphabetic
+** 0 if not
+*/
 int	ft_isalpha(int c)
 {
 	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));

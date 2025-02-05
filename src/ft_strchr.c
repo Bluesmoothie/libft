@@ -6,12 +6,16 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 19:28:57 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:56:54 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:32:39 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/*
+** Return the first occurence of c in s
+** NULL if not found
+*/
 char	*ft_strchr(const char *s, int c)
 {
 	size_t	count;

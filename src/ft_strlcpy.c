@@ -6,12 +6,16 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 18:29:55 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:27:06 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:36:29 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/*
+** Copy up to size bytes of src to dst
+** returning the size of src
+*/
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	count;

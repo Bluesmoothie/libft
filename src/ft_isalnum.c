@@ -6,12 +6,16 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 14:18:56 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:25:08 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:17:58 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/*
+** Return 1 if c is alphanumeric
+** 0 if not
+*/
 int	ft_isalnum(int c)
 {
 	return (ft_isalpha(c) || ft_isdigit(c));

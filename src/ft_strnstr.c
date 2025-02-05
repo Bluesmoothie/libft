@@ -6,12 +6,17 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 13:03:41 by ygille            #+#    #+#             */
-/*   Updated: 2024/11/27 13:27:17 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/05 17:37:58 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/*
+** Search in up to len bytes of big for little
+** return the pointer to the start of little in big
+** NULL if not found
+*/
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
