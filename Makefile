@@ -54,6 +54,7 @@ SRC_FILES	=	char/ft_isalnum 		\
 				string/ft_strrchr 		\
 				string/ft_strtrim 		\
 				string/ft_substr 		\
+				string/ft_uitoa			\
 				write/ft_pustr_fd 		\
 				write/ft_putchar_fd 	\
 				write/ft_putendl_fd 	\
