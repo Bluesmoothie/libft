@@ -6,7 +6,7 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 18:24:44 by ygille            #+#    #+#             */
-/*   Updated: 2025/02/07 16:33:01 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/07 17:59:07 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,4 @@
 void	ft_putchar_fd(char c, int fd)
 {
 	write (fd, &c, 1);
-	return ;
 }

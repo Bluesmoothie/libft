@@ -6,7 +6,7 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 13:45:52 by ygille            #+#    #+#             */
-/*   Updated: 2025/02/07 16:32:06 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/07 17:10:55 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,6 @@ int	ft_atoi(const char *nptr)
 		i++;
 	}
 	while (nptr[i] >= '0' && nptr[i] <= '9')
-	{
-		num *= 10;
-		num += nptr[i] - 48;
-		i++;
-	}
+		num = (num * 10) + (nptr[i++] - 48);
 	return (num * sign);
 }

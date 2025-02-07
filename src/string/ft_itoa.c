@@ -6,7 +6,7 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 17:24:54 by ygille            #+#    #+#             */
-/*   Updated: 2025/02/07 16:32:10 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/07 17:54:46 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,7 @@ char	*ft_itoa(int n)
 		sign *= -1;
 	}
 	if (num == 0)
-	{
-		res[i] = '0';
-		i++;
-	}
+		res[i++] = '0';
 	while (num)
 	{
 		res[i++] = num % 10 + '0';
@@ -63,8 +60,7 @@ static char	*alloc_reverse(char *input, int sign, int i)
 		res = malloc (sizeof(char) * i + 3);
 		if (res == NULL)
 			return (res);
-		res[j] = '-';
-		j++;
+		res[j++] = '-';
 	}
 	while (i >= 0)
 		res[j++] = input[i--];

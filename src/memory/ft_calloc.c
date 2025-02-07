@@ -6,7 +6,7 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 14:00:08 by ygille            #+#    #+#             */
-/*   Updated: 2025/02/07 16:31:49 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/07 18:00:04 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,17 @@
 */
 void	*ft_calloc(size_t nmemb, size_t size)
 {
+	size_t	overflow;
 	void	*array;
-	long	overflow;
 
 	overflow = nmemb * size;
-	if (overflow > INT_MAX)
-		return (NULL);
-	array = malloc (overflow);
-	if (array == NULL)
-		return (NULL);
-	ft_bzero (array, overflow);
+	if (overflow / size == nmemb)
+	{
+		array = malloc (overflow);
+		if (array != NULL)
+			ft_bzero (array, overflow);
+	}
+	else
+		array = NULL;
 	return (array);
 }

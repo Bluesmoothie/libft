@@ -6,7 +6,7 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 14:29:44 by ygille            #+#    #+#             */
-/*   Updated: 2025/02/07 16:31:59 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/07 17:09:07 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,6 @@ void	*ft_memset(void *s, int c, size_t n)
 
 	count = 0;
 	while (count < n)
-	{
-		((char *)s)[count] = c;
-		count++;
-	}
+		((char *)s)[count++] = c;
 	return (s);
 }

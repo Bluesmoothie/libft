@@ -6,7 +6,7 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 16:08:55 by ygille            #+#    #+#             */
-/*   Updated: 2025/02/07 16:32:12 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/07 18:01:20 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,7 @@ char	**ft_split(char const *s, char c)
 			free_all(tab, i);
 			return (NULL);
 		}
-		j = fill(tab[i], j, c, s);
-		i++;
+		j = fill(tab[i++], j, c, s);
 	}
 	tab[i] = NULL;
 	return (tab);
@@ -108,10 +107,7 @@ static	size_t	line_size(size_t i, char c, char const *s)
 static	void	free_all(char **tab, size_t i)
 {
 	while (i != 0)
-	{
-		free(tab[i]);
-		i--;
-	}
+		free(tab[i--]);
 	free(tab[i]);
 	free(tab);
 	return ;

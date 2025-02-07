@@ -6,7 +6,7 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 12:22:10 by ygille            #+#    #+#             */
-/*   Updated: 2025/02/07 16:31:23 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/07 16:54:18 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,4 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 		del (lst->content);
 		free(lst);
 	}
-	return ;
 }

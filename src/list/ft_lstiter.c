@@ -6,7 +6,7 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 12:34:59 by ygille            #+#    #+#             */
-/*   Updated: 2025/02/07 16:31:24 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/07 16:54:25 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,4 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		f (lst->content);
 		lst = lst->next;
 	}
-	return ;
 }

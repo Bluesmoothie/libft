@@ -6,7 +6,7 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 16:36:03 by ygille            #+#    #+#             */
-/*   Updated: 2025/02/07 16:31:57 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/07 17:08:43 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 */
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	if (dest == NULL && src == NULL)
+	if (dest == NULL || src == NULL)
 		return (dest);
 	if (dest < src)
 		ft_memcpy (dest, src, n);

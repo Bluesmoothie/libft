@@ -6,7 +6,7 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 10:29:22 by ygille            #+#    #+#             */
-/*   Updated: 2025/02/07 16:33:05 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/07 17:59:14 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,4 @@ void	ft_putnbr_fd(int n, int fd)
 	if (n / 10)
 		ft_putnbr_fd(n / 10, fd);
 	ft_putchar_fd((n % 10) + '0', fd);
-	return ;
 }
