@@ -11,7 +11,7 @@ CFLAGS		= 	-Wall -Wextra -Werror -MMD -MP -I $(INCLUDE)
 
 BUILD_DIR	=	.build/
 SRC_DIR		=	src/
-INCLUDE		=	include
+INCLUDE		=	include/
 
 #			SRC
 
