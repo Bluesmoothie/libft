@@ -39,6 +39,7 @@ SRC_FILES	=	char/ft_isalnum 		\
 				memory/ft_memmove 		\
 				memory/ft_memset 		\
 				string/ft_atoi 			\
+				string/ft_free_split	\
 				string/ft_itoa 			\
 				string/ft_split 		\
 				string/ft_strchr 		\

@@ -6,7 +6,7 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 16:27:44 by ygille            #+#    #+#             */
-/*   Updated: 2025/02/07 19:45:00 by ygille           ###   ########.fr       */
+/*   Updated: 2025/02/07 20:57:45 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 
 int		ft_atoi(const char *nptr);
+void	ft_free_split(char **split);
 char	*ft_itoa(int n);
 char	**ft_split(char const *s, char c);
 char	*ft_strchr(const char *s, int c);
