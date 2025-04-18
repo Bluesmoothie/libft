@@ -6,7 +6,7 @@
 /*   By: ygille <ygille@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 16:29:20 by ygille            #+#    #+#             */
-/*   Updated: 2025/02/07 16:46:26 by ygille           ###   ########.fr       */
+/*   Updated: 2025/04/18 20:09:29 by ygille           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 # include <unistd.h>
 # include <limits.h>
+
+# include "libft_string.h"
 
 # define INT_MIN_STR	"-2147483648"
 
