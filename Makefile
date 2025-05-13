@@ -1,4 +1,4 @@
-.PHONY		: 	all clean fclean re norme
+.PHONY		: 	all clean fclean re norm
 
 NAME		=	libft.a
 
@@ -10,59 +10,67 @@ CFLAGS		= 	-Wall -Wextra -Werror -MMD -MP -I $(INCLUDE)
 #			COMMON
 
 BUILD_DIR	=	.build/
-SRC_DIR		=	src/
-INCLUDE		=	include/
+SRC_DIR		=	./
+INCLUDE		=	./
 
 #			SRC
 
-SRC_FILES	=	char/ft_isalnum 		\
- 				char/ft_isalpha 		\
-				char/ft_isascii 		\
-				char/ft_isdigit 		\
-				char/ft_isprint 		\
-				char/ft_tolower 		\
-				char/ft_toupper 		\
-				list/ft_lstadd_back 	\
-				list/ft_lstadd_front	\
-				list/ft_lstclear		\
-				list/ft_lstdelone		\
-				list/ft_lstiter			\
-				list/ft_lstlast			\
-				list/ft_lstmap			\
-				list/ft_lstnew			\
-				list/ft_lstsize			\
-				memory/ft_bzero 		\
-				memory/ft_calloc 		\
-				memory/ft_memchr		\
-				memory/ft_memcmp 		\
-				memory/ft_memcpy 		\
-				memory/ft_memmove 		\
-				memory/ft_memset 		\
-				string/ft_atoi 			\
-				string/ft_itoa 			\
-				string/ft_split 		\
-				string/ft_strchr 		\
-				string/ft_strdup 		\
-				string/ft_striteri 		\
-				string/ft_strjoin 		\
-				string/ft_strlcat 		\
-				string/ft_strlcpy 		\
-				string/ft_strlen 		\
-				string/ft_strmapi 		\
-				string/ft_strncmp 		\
-				string/ft_strnstr 		\
-				string/ft_strrchr 		\
-				string/ft_strtrim 		\
-				string/ft_substr 		\
-				string/ft_uitoa			\
-				write/ft_pustr_fd 		\
-				write/ft_putchar_fd 	\
-				write/ft_putendl_fd 	\
-				write/ft_putnbr_fd 		\
+SRC_FILES	=	ft_isalnum 		\
+ 				ft_isalpha 		\
+				ft_isascii 		\
+				ft_isdigit 		\
+				ft_isprint 		\
+				ft_tolower 		\
+				ft_toupper 		\
+				ft_bzero 		\
+				ft_calloc 		\
+				ft_memchr		\
+				ft_memcmp 		\
+				ft_memcpy 		\
+				ft_memmove 		\
+				ft_memset 		\
+				ft_atoi 		\
+				ft_strchr 		\
+				ft_strdup 		\
+				ft_strlcat 		\
+				ft_strlcpy 		\
+				ft_strlen 		\
+				ft_strncmp 		\
+				ft_strnstr 		\
+				ft_strrchr 		\
+				ft_pustr_fd 	\
+				ft_putchar_fd 	\
+				ft_putendl_fd 	\
+				ft_putnbr_fd	\
+				ft_itoa 		\
+				ft_split 		\
+				ft_striteri 	\
+				ft_strjoin 		\
+				ft_strmapi 		\
+				ft_strtrim 		\
+				ft_substr 		\
 
 SRC 		= 	$(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))
 OBJ 		= 	$(addprefix $(BUILD_DIR), $(addsuffix .o, $(SRC_FILES)))
 DEPS 		= 	$(addprefix $(BUILD_DIR), $(addsuffix .d, $(SRC_FILES)))
+
+#			BONUS
+
+BONUS_SRC_FILES	=	$(SRC_FILES)
+
+BONUS_SRC_FILES	+=	ft_lstadd_back_bonus 	\
+					ft_lstadd_front_bonus	\
+					ft_lstclear_bonus		\
+					ft_lstdelone_bonus		\
+					ft_lstiter_bonus		\
+					ft_lstlast_bonus		\
+					ft_lstmap_bonus			\
+					ft_lstnew_bonus			\
+					ft_lstsize_bonus		\
+
+BONUS_SRC 		= 	$(addprefix $(SRC_DIR), $(addsuffix .c, $(BONUS_SRC_FILES)))
+BONUS_OBJ 		= 	$(addprefix $(BUILD_DIR), $(addsuffix .o, $(BONUS_SRC_FILES)))
+BONUS_DEPS 		= 	$(addprefix $(BUILD_DIR), $(addsuffix .d, $(BONUS_SRC_FILES)))
 
 #			RULES
 
@@ -72,18 +80,19 @@ $(NAME)			: $(BUILD_DIR) $(OBJ)
 				ar -rcs $(NAME) $(OBJ)
 
 $(BUILD_DIR)	:
-				mkdir -p $(BUILD_DIR)/char
-				mkdir -p $(BUILD_DIR)/list
-				mkdir -p $(BUILD_DIR)/memory
-				mkdir -p $(BUILD_DIR)/string
-				mkdir -p $(BUILD_DIR)/write
+				mkdir -p $(BUILD_DIR)
 
 $(BUILD_DIR)%.o	: $(SRC_DIR)%.c
 				$(CC) $(CFLAGS) -c $< -o $@
 
 -include $(DEPS)
 
-norme			:
+bonus			: $(BUILD_DIR) $(BONUS_OBJ)
+				ar -rcs $(NAME) $(BONUS_OBJ)
+
+-include $(BONUS_DEPS)
+
+norm			:
 				norminette $(SRC) $(INCLUDE)
 
 clean			:
