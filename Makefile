@@ -5,7 +5,7 @@ NAME		=	libft.a
 #			GCC
 
 CC			=	cc
-CFLAGS		= 	-Wall -Wextra -Werror -MMD -MP -I $(INCLUDE)
+CFLAGS		= 	-Wall -Wextra -Werror -MMD -MP -fPIC -I $(INCLUDE)
 
 #			COMMON
 
